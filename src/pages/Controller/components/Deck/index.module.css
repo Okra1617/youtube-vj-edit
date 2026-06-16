@@ -1,0 +1,106 @@
+.deck {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-bottom: 0 !important;
+}
+
+.player {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  position: relative;
+  display: block;
+}
+
+.player iframe {
+  position: absolute;
+  inset: 0;
+}
+
+.controlsContainer {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.adjust {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 0.5rem;
+  margin-bottom: 8px;
+}
+
+.adjust button {
+  padding: 8px 0;
+}
+
+.adjust span {
+  line-height: 50px;
+  height: 50px;
+  padding: 0;
+}
+
+.controlFieldset {
+  flex: 1;
+}
+
+.speedButton {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+.fader {
+  width: 50px;
+  height: 150px;
+}
+
+.speedInput {
+  width: 50px;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #555;
+  outline: none;
+  color: white;
+}
+
+.effectHint {
+  font-size: 0.75em;
+  color: #888;
+  font-weight: normal;
+}
+
+.effectButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  padding: 4px 0;
+}
+
+.effectButton {
+  padding: 4px 8px;
+  font-size: 0.78em;
+  background: #333;
+  color: #ccc;
+  border: 1px solid #555;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.effectButton:hover {
+  background: #444;
+  color: #fff;
+}
+
+.effectButtonActive {
+  background: #1a6aff;
+  color: #fff;
+  border-color: #1a6aff;
+}
