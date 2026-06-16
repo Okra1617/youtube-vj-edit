@@ -3,6 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/youtube-vj-edit/favicon.ico" />
+<<<<<<< HEAD
+=======
+    <script>
+      (function () {
+        var p = window.location.search.match(/[?&]p=([^&]*)/);
+        if (p) {
+          var path = decodeURIComponent(p[1]);
+          window.history.replaceState(null, null, '/youtube-vj-edit' + path);
+        }
+      })();
+    </script>
+>>>>>>> 9f6b8fd (first commit)
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>YouTube-VJ Controller Window</title>
     <script type="module" crossorigin src="/youtube-vj-edit/assets/index-BZmX0XE4.js"></script>
