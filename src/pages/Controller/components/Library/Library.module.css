@@ -1,0 +1,43 @@
+.library {
+  display: flex;
+  flex: 2;
+  flex-direction: row;
+  border-top: solid 1px #555;
+  overflow: hidden;
+}
+
+.playlist {
+  width: 150px;
+  border-right: solid 1px #555;
+  text-align: center;
+}
+
+.playlist > button {
+  margin: 8px auto;
+}
+
+.playlist > ul {
+  text-align: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.playlist > ul > li {
+  padding-left: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.playlist > ul li.focused,
+.playlist > ul li:hover {
+  background: #fff3;
+}
+
+.search {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
